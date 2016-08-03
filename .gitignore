@@ -1,0 +1,17 @@
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+composer.phar
+vendor
+
+tests/unit/coverage/*
+
+.buildpath
+.project
+.settings/*
+.idea/*

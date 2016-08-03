@@ -1,0 +1,45 @@
+{
+  "name": "identity-map",
+  "description": "identity-map php library",
+  "keywords": [
+    "identity",
+    "map",
+    "in-memory",
+    "memory",
+    "storage"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Drasko Gomboc",
+      "email": "drasko.gomboc@gmail.com"
+    },
+    {
+      "name": "Dejan Samardzija",
+      "email": "samardzijadejan@gmail.com"
+    },
+    {
+      "name": "Ivan Krickovic",
+      "email": "ivan.krickovic@gmail.com"
+    },
+    {
+      "name": "Zeljko Simic",
+      "email": "zeljkosbgd@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {"G4\\IdentityMap\\": "src/"}
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.*"
+  },
+  "require": {
+    "php"        : ">=5.6",
+    "g4/profiler": "0.4.0"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpunit -c test/phpunit.xml"
+    ]
+  }
+}
