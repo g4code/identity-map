@@ -20,6 +20,9 @@ class IdentityMap
         $this->map = [];
     }
 
+    /**
+     * @param null $key
+     */
     public function delete($key = null)
     {
         if ($key !== null && $this->has($key)) {
@@ -27,6 +30,10 @@ class IdentityMap
         }
     }
 
+    /**
+     * @param null $key
+     * @return mixed
+     */
     public function get($key = null)
     {
         return $key !== null && $this->has($key)
@@ -34,11 +41,19 @@ class IdentityMap
             : null;
     }
 
+    /**
+     * @param $key
+     * @return bool
+     */
     public function has($key)
     {
         return isset($this->map[$key]);
     }
 
+    /**
+     * @param $key
+     * @param $value
+     */
     public function set($key, $value)
     {
         if ($key !== null) {
