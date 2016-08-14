@@ -24,7 +24,7 @@ $data = 'some_data';
 $identityMap->set($key, $data);
 
 // retrieve data
-$data = $identityMap->set($key);
+$data = $identityMap->get($key);
 
 // check if data is stored
 $identityMap->has($key);
@@ -41,7 +41,7 @@ $identityMap->clear();
 
 ### Install dependencies
 
-    $ make install
+    $ make install
 
 ### Run tests
 
