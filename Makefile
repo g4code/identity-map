@@ -1,4 +1,4 @@
-TITLE = [gateway]
+TITLE = [identity-map]
 
 unit-tests:
 	@/bin/echo -e "${TITLE} testing suite started..." \
