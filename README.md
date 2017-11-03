@@ -1,9 +1,9 @@
 identity-map
 ======
 
-> identity-map - [php](http://php.net) library
+> identity-map - In-memory data store - [php](http://php.net) library
 
-In-memory data store
+[![Build Status](https://travis-ci.org/g4code/identity-map.svg?branch=master)](https://travis-ci.org/g4code/identity-map)
 
 ## Install
 ```sh
@@ -41,11 +41,15 @@ $identityMap->clear();
 
 ### Install dependencies
 
-    $ make install
+```sh
+composer install
+```
 
 ### Run tests
 
-    $ make test
+```sh
+composer unit-test
+```
 
 ## License
 
