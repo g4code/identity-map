@@ -36,17 +36,17 @@
     "g4/code-coverage"          : "1.*"
   },
   "require": {
-    "g4/profiler": "*"
+    "g4/profiler": ">=1.10.0"
   },
   "scripts": {
     "unit-test": [
-      "vendor/bin/phpunit -c tests/unit/phpunit.xml --colors=always --coverage-html tests/unit/coverage"
+      "XDEBUG_MODE=coverage vendor/bin/phpunit -c tests/unit/phpunit.xml --colors=always --coverage-html tests/unit/coverage"
     ],
     "test-coverage": [
-      "./vendor/bin/phpunit --colors=always -c tests/unit/phpunit.xml --coverage-text"
+      "XDEBUG_MODE=coverage ./vendor/bin/phpunit --colors=always -c tests/unit/phpunit.xml --coverage-text"
     ],
     "test-report": [
-      "./vendor/bin/phpunit --colors=always -c tests/unit/phpunit.xml --coverage-clover=tests/unit/coverage/code-coverage.xml"
+      "XDEBUG_MODE=coverage ./vendor/bin/phpunit --colors=always -c tests/unit/phpunit.xml --coverage-clover=tests/unit/coverage/code-coverage.xml"
     ],
     "code-coverage": [
       "./vendor/bin/code-coverage -p 90 -f tests/unit/coverage/code-coverage.xml"
