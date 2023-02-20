@@ -6,6 +6,7 @@ class Ticker extends \G4\Profiler\Ticker\TickerAbstract
 {
 
     const NAME = 'identity-map';
+    const TYPE = 'idmap';
 
     private static $instance;
 
@@ -43,6 +44,11 @@ class Ticker extends \G4\Profiler\Ticker\TickerAbstract
     public function getName()
     {
         return self::NAME;
+    }
+
+    public function getType()
+    {
+        return self::TYPE;
     }
 
     /**
